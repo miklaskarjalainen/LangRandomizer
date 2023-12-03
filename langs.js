@@ -1,19 +1,57 @@
 const Languages = [
+    "Assembly",
+    
+    "Bash",
+    
     "C",
+    "CoffeScript",
+    "Crystal",
     "C++",
     "C#",
+
+    "Dart",
+
+    "Elixir",
+
+    "Forth",
+    "F#",
+
     "GDScript",
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Lua",
-    "Ruby",
-    "PHP",
     "GoLang",
-    "Crystal",
-    "Zig",
-    "Bash",
+
     "Haskell",
+    "HolyC",
+    
+    "Jai",
+    "Java",
+    "JavaScript",
+    "Julia",
+
+    "Lisp",
+    "Lua",
+
+    "Mojo",
+    
     "Nim",
-    "Java"
-]
+    
+    "Objective-C",
+    "OCaml",
+
+    "Perl",
+    "PHP",
+    "Python",
+
+    "Ruby",
+    "Rust",
+
+    "Scala",
+    "Scratch",
+    "Swift",
+
+    "TypeScript",
+
+    "V",
+    "Vala",
+
+    "Zig",
+];
