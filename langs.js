@@ -4,7 +4,7 @@ const Languages = [
     "Bash",
     
     "C",
-    "CoffeScript",
+    "CoffeeScript",
     "Crystal",
     "C++",
     "C#",
@@ -31,7 +31,7 @@ const Languages = [
     "Lua",
 
     "Mojo",
-    
+
     "Nim",
     
     "Objective-C",
