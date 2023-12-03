@@ -1,0 +1,128 @@
+html,
+body {
+    height: 100%;
+    background-color: #03001C;
+    margin: 0;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.button-container {
+    flex: 0 0 15rem;
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container button {
+    height: 6rem;
+    width: 11rem;
+
+    color: white;
+    font-family: 'Kanit';
+    font-size: 18px;
+    cursor: pointer;
+
+    border: 2px solid rebeccapurple;
+    border-radius: 1rem;
+    background-color: #21187644;
+    
+    transition: 0.8s;
+}
+
+.button-container button:hover {
+    height: 8rem;
+    width: 14rem;
+    font-size: 20px;
+
+    border: 2px solid rebeccapurple;
+    border-radius: 2.5rem;
+    background-color: #211876FF;
+    box-shadow: 0 0 15px 1px #FFFFFF66;
+    
+    transition: 0.4s;
+}
+
+.answer-container {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#answer {
+    font-family: 'Kanit';
+    font-size: 72px;
+    font-weight: bolder;
+    
+    background: -webkit-linear-gradient(58deg, #0C134F, #1D267D, #5C469C, #D4ADFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    filter: drop-shadow(0px 0px 23px #FFFFFF22);
+    transition: 1.5s;
+}
+
+#answer:hover {
+    font-size: 80px;
+
+    filter: drop-shadow(0px 0px 48px #FFFFFF88);
+    transition: 0.8s;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.parameters {
+    align-self: center;
+}
+
+.navbar {
+    flex: 0 1 4rem;
+
+    background-image: linear-gradient(58deg, #0C134F, #1D267D, #5C469C, #D4ADFC);
+    background-size: 300% 300%;
+    animation: gradient-colors 5s ease-in-out infinite;
+}
+
+.navbar div {
+    line-height: 4rem;
+    text-align: center;
+
+    color: white;
+    font-size: xx-large;
+    font-family: 'Kanit';
+}
+
+@keyframes gradient-colors {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.footer {
+    flex: 0 1 8rem;
+}
+
+.footer div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    font-size: small;
+    font-family: 'Kanit';
+}
+

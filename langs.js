@@ -1,0 +1,19 @@
+const Languages = [
+    "C",
+    "C++",
+    "C#",
+    "GDScript",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Lua",
+    "Ruby",
+    "PHP",
+    "GoLang",
+    "Crystal",
+    "Zig",
+    "Bash",
+    "Haskell",
+    "Nim",
+    "Java"
+]
