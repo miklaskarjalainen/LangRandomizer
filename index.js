@@ -1,11 +1,13 @@
 
-
 function whattf() {
-    const Random = Math.floor(Math.random() * Languages.length);
-    const Language = Languages[Random];
-
-    document.getElementById("answer").innerHTML = Language;
-
-    // console.log(Languages[Random]);
+    const Language = get_random_language();
+    console.log(Language);
+    document.getElementById("answer").innerHTML = Language.name;
+    
+    const highlightedCode = hljs.highlight(
+        Language.example,
+        { language: Language.style }
+    ).value
+    document.getElementById("example-code").innerHTML = highlightedCode;
 }
 
