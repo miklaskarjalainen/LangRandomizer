@@ -1,7 +1,6 @@
 
-function whattf() {
+function randomize_clicked() {
     const Language = get_random_language();
-    console.log(Language);
     document.getElementById("answer").innerHTML = Language.name;
     
     const highlightedCode = hljs.highlight(

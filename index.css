@@ -1,8 +1,11 @@
 html,
 body {
     height: 100%;
-    background-color: #03001C;
+    background-color: #010101;
     margin: 0;
+    overflow: hidden;
+
+    background: linear-gradient(74deg, #010101, #150050);
 }
 
 .container {
@@ -10,12 +13,14 @@ body {
     display: flex;
     flex-flow: column;
     height: 100%;
+
 }
 
 .button-container {
     flex: 0 0 15rem;
     display: flex;
     width: 100%;
+    z-index: 1;
     
     align-items: center;
     justify-content: center;
@@ -62,7 +67,8 @@ body {
     font-family: 'Kanit';
     font-size: 72px;
     font-weight: bolder;
-    
+    z-index: 1;
+
     background: -webkit-linear-gradient(58deg, #0C134F, #1D267D, #5C469C, #D4ADFC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,9 +94,8 @@ body {
 }
 
 .answer-code-block {
-    overflow: auto;
+    background-color: rgba( 255, 255, 255, 0.9);
     border-radius: 0.5rem;
-
     min-height: 380px;
 }
 
@@ -98,18 +103,21 @@ body {
 ::-webkit-scrollbar {
     height: 4px;
     width: 4px;
+    z-index: 1;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 8px gray;
     border-radius: 8px;
+    z-index: 1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rebeccapurple;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .answer-example {
@@ -126,10 +134,10 @@ body {
 
 .navbar {
     flex: 0 1 4rem;
-
-    background-image: linear-gradient(58deg, #0C134F, #1D267D, #5C469C, #D4ADFC);
+    z-index: 1;
+    background-image: linear-gradient(58deg, #0C134F, #1D267D, #5C469C, #270082);
     background-size: 300% 300%;
-    animation: gradient-colors 5s ease-in-out infinite;
+    animation: gradient-colors 18s ease-in-out infinite;
 }
 
 .navbar div {
