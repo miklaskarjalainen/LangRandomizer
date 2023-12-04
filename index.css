@@ -86,9 +86,11 @@ body {
 
 .answer-example-container {
     position: absolute;
+    display: inline-block;
+
     width: 28rem;
-    top: 18rem;
-    left: 1rem;
+    top: calc(50% - (380px / 2));
+    left: 2rem;
     padding: 5px;
     border-radius: 1px;
 }
