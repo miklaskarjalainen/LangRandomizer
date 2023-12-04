@@ -34,15 +34,10 @@
     }
 }
 
-.hljs {
-    color: #abb2bf;
-    background: red;
-}
-
 .g1 {
     position: absolute;
     mix-blend-mode: hard-light;
-    background: radial-gradient(circle at center, #940B92AA 0, #3F007100 50%) no-repeat;
+    background: radial-gradient(circle at center, #166161FF 0, #3F007100 50%) no-repeat;
     z-index: 0;
     width: 80%;
     height: 80%;
@@ -54,14 +49,12 @@
     animation: moveVertical 30s ease infinite;
 
     opacity: 1;
-
-    filter: blur(5px);
 }
 
 .g2 {
     position: absolute;
     mix-blend-mode: hard-light;
-    background: radial-gradient(circle at center, #FB2576AA 0, #3F007100 50%) no-repeat;
+    background: radial-gradient(circle at center, rgba(128, 0, 128, 0.8) 0, #3F007100 50%) no-repeat;
     z-index: 0;
     width: 80%;
     height: 80%;
@@ -73,7 +66,6 @@
     animation: moveInCircle 20s reverse infinite;
 
     opacity: 1;
-    filter: blur(5px);
 }
 
 .g3 {
@@ -91,7 +83,6 @@
     animation: moveHorizontal 40s linear infinite;
 
     opacity: 1;
-    filter: blur(5px);
 }
 
 .g4 {
@@ -109,23 +100,25 @@
     animation: moveInCircle 20s ease infinite;
 
     opacity: 1;
-    filter: blur(5px);
 }
 
-.g5 {
+#mouse-circle {
     position: absolute;
     mix-blend-mode: hard-light;
-    background: radial-gradient(circle at center, #610C9FFF 0, #3F007100 50%) no-repeat;
+    background: radial-gradient(circle at center, #590459FF 0, #3F007100 50%) no-repeat;
     z-index: 0;
+
     width: 80%;
     height: 80%;
+    top: -50%;
+    left: -50%;
 
-    top: calc(50% - 80% / 2);
-    left: calc(50% - 80% / 2);
+    opacity: 0.7;
+}
 
-    transform-origin: calc(50% + 400px) calc(50% + 200px);
-    animation: moveInCircle 70s ease infinite;
-
-    opacity: 1;
-    filter: blur(5px);
+.gradient-bg {
+    position: absolute;
+    filter: url(#goo) blur(25px);
+    width: 100%;
+    height: 100%;
 }
