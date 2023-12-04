@@ -301,7 +301,7 @@ main::() {
 
     public static void main(String[] args) {
         final int A = 8, B = 7;
-        System.out.printf("%d + %d = %d\n", A, B, sum(A, B));
+        System.out.printf("%d + %d = %d\\n", A, B, sum(A, B));
     }
 }`
 },
