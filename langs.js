@@ -36,7 +36,8 @@ const Languages = [
     
     "Objective-C",
     "OCaml",
-
+    	
+    "Pascal",
     "Perl",
     "PHP",
     "Python",
