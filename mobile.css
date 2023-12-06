@@ -51,7 +51,7 @@
 }
 
 /* Landscape */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 600px)   {
     .answer-container {
         margin-top: 8%;
     }
