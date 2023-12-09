@@ -64,7 +64,7 @@ body {
 }
 
 #answer {
-    font-family: 'Kanit';
+    font-family: 'Kanit', 'Brush Script MT', cursive;
     font-size: 72px;
     font-weight: bolder;
     z-index: 1;

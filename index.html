@@ -5,73 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This website will give you a random program langauge and a quick preview of the language.">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="./circles.css">
-        <link rel="stylesheet" href="./mobile.css">
-        <link rel="stylesheet" href="./highlight-theme.css">
+        <!-- Prioritized loading -->
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" as="script" />
+        <link rel="preload" href="./index.css" as="style" />
+        <link rel="preload" href="./highlight-theme.css" as="style" />
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
+        <link rel="stylesheet" href="./mobile.css" />
+        <link rel="stylesheet" href="./circles.css" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./highlight-theme.css"/>
 
         <!-- highlightjs -->
         <script>var exports = {};</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/coffeescript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/crystal.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js"></script> <!-- pascal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/elixir.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/fsharp.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/haskell.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/julia.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/nim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/ocaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/scala.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/vala.min.js"></script>
-        <script src="thirdparty/gdscript.min.js"></script>
-        <script src="thirdparty/zig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/coffeescript.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/crystal.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/delphi.min.js" async></script> <!-- pascal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/elixir.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/fsharp.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/haskell.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/julia.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/nim.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/ocaml.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/scala.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/vala.min.js" async></script>
+        <script src="thirdparty/gdscript.min.js" async></script>
+        <script src="thirdparty/zig.min.js" async></script>
         
         <!-- Programming Languages (alphabetical order) -->
         <script src="./build/languages.js"></script> <!-- Keep at the top of language definitions! -->
-        <script src="./build/languages/assembly.js"></script>
-        <script src="./build/languages/bash.js"></script>
-        <script src="./build/languages/c.js"></script>
-        <script src="./build/languages/coffeescript.js"></script>
-        <script src="./build/languages/cpp.js"></script>
-        <script src="./build/languages/crystal.js"></script>
-        <script src="./build/languages/csharp.js"></script>
-        <script src="./build/languages/dart.js"></script>
-        <script src="./build/languages/elixir.js"></script>
-        <script src="./build/languages/forth.js"></script>
-        <script src="./build/languages/fsharp.js"></script>
-        <script src="./build/languages/gdscript.js"></script>
-        <script src="./build/languages/go.js"></script>
-        <script src="./build/languages/haskell.js"></script>
-        <script src="./build/languages/holyc.js"></script>
-        <script src="./build/languages/jai.js"></script>
-        <script src="./build/languages/java.js"></script>
-        <script src="./build/languages/javascript.js"></script>
-        <script src="./build/languages/julia.js"></script>
-        <script src="./build/languages/lisp.js"></script>
-        <script src="./build/languages/lua.js"></script>
-        <script src="./build/languages/mojo.js"></script>
-        <script src="./build/languages/nim.js"></script>
-        <script src="./build/languages/objectivec.js"></script>
-        <script src="./build/languages/ocaml.js"></script>
-        <script src="./build/languages/pascal.js"></script>
-        <script src="./build/languages/perl.js"></script>
-        <script src="./build/languages/php.js"></script>
-        <script src="./build/languages/python.js"></script>
-        <script src="./build/languages/ruby.js"></script>
-        <script src="./build/languages/rust.js"></script>
-        <script src="./build/languages/scala.js"></script>
-        <script src="./build/languages/swift.js"></script>
-        <script src="./build/languages/typescript.js"></script>
-        <script src="./build/languages/vala.js"></script>
-        <script src="./build/languages/vlang.js"></script>
-        <script src="./build/languages/zig.js"></script>
+        <script src="./build/languages/assembly.js" async></script>
+        <script src="./build/languages/bash.js" async></script>
+        <script src="./build/languages/c.js" async></script>
+        <script src="./build/languages/coffeescript.js" async></script>
+        <script src="./build/languages/cpp.js" async></script>
+        <script src="./build/languages/crystal.js" async></script>
+        <script src="./build/languages/csharp.js" async></script>
+        <script src="./build/languages/dart.js" async></script>
+        <script src="./build/languages/elixir.js" async></script>
+        <script src="./build/languages/forth.js" async></script>
+        <script src="./build/languages/fsharp.js" async></script>
+        <script src="./build/languages/gdscript.js" async></script>
+        <script src="./build/languages/go.js" async></script>
+        <script src="./build/languages/haskell.js" async></script>
+        <script src="./build/languages/holyc.js" async></script>
+        <script src="./build/languages/jai.js" async></script>
+        <script src="./build/languages/java.js" async></script>
+        <script src="./build/languages/javascript.js" async></script>
+        <script src="./build/languages/julia.js" async></script>
+        <script src="./build/languages/lisp.js" async></script>
+        <script src="./build/languages/lua.js" async></script>
+        <script src="./build/languages/mojo.js" async></script>
+        <script src="./build/languages/nim.js" async></script>
+        <script src="./build/languages/objectivec.js" async></script>
+        <script src="./build/languages/ocaml.js" async></script>
+        <script src="./build/languages/odin.js" async></script>
+        <script src="./build/languages/pascal.js" async></script>
+        <script src="./build/languages/perl.js" async></script>
+        <script src="./build/languages/php.js" async></script>
+        <script src="./build/languages/python.js" async></script>
+        <script src="./build/languages/ruby.js" async></script>
+        <script src="./build/languages/rust.js" async></script>
+        <script src="./build/languages/scala.js" async></script>
+        <script src="./build/languages/swift.js" async></script>
+        <script src="./build/languages/typescript.js" async></script>
+        <script src="./build/languages/vala.js" async></script>
+        <script src="./build/languages/vlang.js" async></script>
+        <script src="./build/languages/zig.js" async></script>
 
-        <script src="./build/index.js"></script>
+        <script src="./build/index.js" defer></script>
         <title>Randomize Language</title>
     </head>
     
