@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="./mobile.css">
         <link rel="stylesheet" href="./highlight-theme.css">
 
-        <!-- highlightjs-->
+        <!-- highlightjs -->
+        <script>var exports = {};</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/x86asm.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/coffeescript.min.js"></script>
@@ -27,14 +28,50 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/ocaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/scala.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/vala.min.js"></script>
-        <script src="./thirdparty/gdscript.min.js"></script>
-        <script src="./thirdparty/zig.min.js"></script>
-        <script>hljs.highlightAll();</script>
+        <script src="thirdparty/gdscript.min.js"></script>
+        <script src="thirdparty/zig.min.js"></script>
+        
+        <!-- Programming Languages (alphabetical order) -->
+        <script src="./build/languages.js"></script> <!-- Keep at the top of language definitions! -->
+        <script src="./build/languages/assembly.js"></script>
+        <script src="./build/languages/bash.js"></script>
+        <script src="./build/languages/c.js"></script>
+        <script src="./build/languages/coffeescript.js"></script>
+        <script src="./build/languages/cpp.js"></script>
+        <script src="./build/languages/crystal.js"></script>
+        <script src="./build/languages/csharp.js"></script>
+        <script src="./build/languages/dart.js"></script>
+        <script src="./build/languages/elixir.js"></script>
+        <script src="./build/languages/forth.js"></script>
+        <script src="./build/languages/fsharp.js"></script>
+        <script src="./build/languages/gdscript.js"></script>
+        <script src="./build/languages/go.js"></script>
+        <script src="./build/languages/haskell.js"></script>
+        <script src="./build/languages/holyc.js"></script>
+        <script src="./build/languages/jai.js"></script>
+        <script src="./build/languages/java.js"></script>
+        <script src="./build/languages/javascript.js"></script>
+        <script src="./build/languages/julia.js"></script>
+        <script src="./build/languages/lisp.js"></script>
+        <script src="./build/languages/lua.js"></script>
+        <script src="./build/languages/mojo.js"></script>
+        <script src="./build/languages/nim.js"></script>
+        <script src="./build/languages/objectivec.js"></script>
+        <script src="./build/languages/ocaml.js"></script>
+        <script src="./build/languages/pascal.js"></script>
+        <script src="./build/languages/perl.js"></script>
+        <script src="./build/languages/php.js"></script>
+        <script src="./build/languages/python.js"></script>
+        <script src="./build/languages/ruby.js"></script>
+        <script src="./build/languages/rust.js"></script>
+        <script src="./build/languages/scala.js"></script>
+        <script src="./build/languages/swift.js"></script>
+        <script src="./build/languages/typescript.js"></script>
+        <script src="./build/languages/vala.js"></script>
+        <script src="./build/languages/vlang.js"></script>
+        <script src="./build/languages/zig.js"></script>
 
-        <!-- Initialize languages -->
-        <script src="./langs.js"></script>
-
-        <script src="./index.js"></script>
+        <script src="./build/index.js"></script>
         <title>Randomize Language</title>
     </head>
     
@@ -82,7 +119,7 @@
             </div>
 
             <div class="button-container">
-                <button onclick="randomize_clicked()">
+                <button id="_randomize_langauge">
                     Randomize
                 </button>
             </div>

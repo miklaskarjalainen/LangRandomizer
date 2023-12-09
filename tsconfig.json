@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "rootDir": "scripts",
+        "outDir": "build",
+        "target": "ES6",
+        "lib": [
+            "dom",
+            "es2015",
+            "es5",
+            "es6"
+        ]
+    }
+}
