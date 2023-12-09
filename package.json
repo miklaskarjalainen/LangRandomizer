@@ -7,9 +7,8 @@
   "scripts": {
     "build": "npx tsc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "watch": "npx tsc -w",
-    "clean": "rmdir ./build"
+    "deploy": "gh-pages -d target",
+    "watch": "npx tsc -w"
   },
   "repository": {
     "type": "git",
