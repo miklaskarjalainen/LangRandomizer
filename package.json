@@ -1,10 +1,13 @@
 {
+  "homepage": "https://miklaskarjalainen.github.io/LangRandomizer/",
   "name": "randomprogramminglanguage",
   "version": "0.0.1",
   "description": "gives you random programming language",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "watch": "npx tsc -w",
     "clean": "rmdir ./build"
   },
@@ -17,5 +20,7 @@
   "bugs": {
     "url": "https://github.com/miklaskarjalainen/LangRandomizer/issues"
   },
-  "homepage": "https://github.com/miklaskarjalainen/LangRandomizer#readme"
+  "dependencies": {
+    "gh-pages": "^6.1.0"
+  }
 }
