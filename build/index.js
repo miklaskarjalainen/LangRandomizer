@@ -4,15 +4,13 @@ let tgX = 0;
 let tgY = 0;
 document.addEventListener('DOMContentLoaded', () => {
     // Click event
-    function randomize_clicked() {
+    document.getElementById("_randomize_langauge").addEventListener("click", () => {
         const Language = get_random_langage();
         document.getElementById("answer").innerHTML = Language.name;
         // @ts-ignore
         const highlightedCode = hljs.highlight(Language.example, { language: Language.style }).value;
-        document.getElementById("example-code").innerHTML = highlightedCode;
-    }
-    document.getElementById("_randomize_langauge").addEventListener("click", () => {
-        randomize_clicked();
+        const ExampleCode = document.getElementById("answer-code-block");
+        ExampleCode.innerHTML = highlightedCode;
     });
     // Following bubble
     const Easing = 100;
