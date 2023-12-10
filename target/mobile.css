@@ -1,7 +1,7 @@
 /* Portait */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1150px) {
     .answer-container {
-        margin-top: 8%;
+        margin-top: 12dvh;
     }
     
     #answer {
@@ -13,21 +13,18 @@
     }
 
     .answer-example-container {
-        position: absolute;
-        display: inline-block;
-    
         margin: auto;
-        max-width: calc(100% - 4rem - 6px);
-        top: calc(8% + 42px);
+        top: calc(24dvh);
         left: 2rem;
         padding: 5px;
         border-radius: 1px;
+        width: calc(100% - 4rem - 6px);
+        justify-content: center;
     }
     
     .answer-code-block {
         background-color: rgba( 255, 255, 255, 0.9);
-        border-radius: 0.5rem;
-        min-height: 320px;
+        height: 50dvh;
         font-size: 14px;
     }
     
@@ -46,52 +43,6 @@
     }
     
     .footer {
-        flex: 0 1 2rem;
-    }
-}
-
-/* Landscape */
-@media only screen and (max-width: 992px) and (min-width: 600px)   {
-    .answer-container {
-        margin-top: 8%;
-    }
-
-    #answer {
-        font-size: 64px;
-    }
-
-    #answer:hover {
-        font-size: 64px;
-    }
-
-    .answer-example-container {
-        position: absolute;
-        display: inline-block;
-
-        max-width: calc(50% - 8rem);
-        top: 0rem;
-        left: 1rem;
-        margin-bottom: 2rem;
-        border-radius: 1px;
-    }
-
-    .answer-code-block {
-        background-color: rgba( 255, 255, 255, 0.9);
-        min-height: 20px;
-        font-size: 12px;
-    }
-
-    .button-container button {
-        height: 4rem;
-        width: 8rem;
-    }
-
-    .button-container button:hover {
-        height: 4rem;
-        width: 8rem;
-    }
-
-    .footer {
-        flex: 0 1 2rem;
+        flex: 0 1 3rem;
     }
 }
